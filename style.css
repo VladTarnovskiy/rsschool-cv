@@ -20,7 +20,7 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: grey;
 }
 
 .avatar{
@@ -33,17 +33,39 @@
 }
 
 .navigation{
-    margin: 5px 5px;
+    margin: 0 5px;
+    padding-top: 5px;
 }
 
 .name{
-    font-size: 32px;
+    font-size: 48px;
 }
 
 .contacts{
     padding-left: 120px;
+    min-width: 420px;
 }
 
 .contact-item{
     margin-bottom: 10px;
+}
+
+.section-name{
+    border-bottom: 3px solid black;
+    padding-left: 20px;
+    margin: 0 5px 0 5px;
+}
+
+.section{
+    margin-top: 20px;
+}
+
+.section-discription{
+    margin: 0 5px 0 5px;
+    padding-top: 5px;
+}
+
+.section-discription > img{
+    width: 900px;
+    height: 300px;
 }
