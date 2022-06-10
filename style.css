@@ -1,3 +1,49 @@
-.x{
-    font-size: 16px;
+:root{
+    --font-text: Arial, sans-serif;
+}
+
+*{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    min-width: 900px;
+    list-style-type: none;
+    padding: 0 5px 0 5px;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.avatar{
+    width: 400px;
+    height: 500px;
+}
+
+.contact-wrapper{
+    display: flex;
+}
+
+.navigation{
+    margin: 5px 5px;
+}
+
+.name{
+    font-size: 32px;
+}
+
+.contacts{
+    padding-left: 120px;
+}
+
+.contact-item{
+    margin-bottom: 10px;
 }
