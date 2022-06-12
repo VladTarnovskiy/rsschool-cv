@@ -10,6 +10,10 @@
     font-family: var(--font-text);
 }
 
+body{
+    background-color: rgb(98, 97, 97);
+}
+
 a:hover{
     color: white;
     transition: color 0.3s linear;
