@@ -1,5 +1,5 @@
 :root{
-    --font-text: Gill Sans Extrabold, sans-serif;;
+    --font-text: Roboto, sans-serif;
 }
 
 *{
@@ -8,6 +8,7 @@
     color: black;
     margin: 0px;
     font-family: var(--font-text);
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,7 +17,7 @@ body{
 
 a:hover{
     color: white;
-    transition: color 0.3s linear;
+    transition: color 0.2s ease-in;
 }
 
 .nav-list{
@@ -29,8 +30,8 @@ a:hover{
     border-top: 1px solid black;
 }
 
-.nav-item{
-    text-shadow: 2px 2px 2px white;
+a{
+    text-shadow: 1px 1px 1px rgb(205, 211, 211);
 }
 
 .wrapper{
@@ -62,6 +63,7 @@ a:hover{
 .job-name{
     font-size: 35px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 1px rgb(242, 247, 247);
 }
 
 .contacts{
@@ -115,4 +117,8 @@ a:hover{
 .rs-logo{
     width: 110px;
     height: 40px;
+}
+
+.rs-logo:hover{
+    transform: translateX(2px) translateY(-2px);
 }
