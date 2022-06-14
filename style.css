@@ -23,11 +23,33 @@ a:hover{
 .nav-list{
     display: flex;
     justify-content: space-between;
-    min-width: 900px;
     list-style-type: none;
     padding: 10px 5px 10px 5px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    border-radius: 5px;
+}
+
+.button-humburger{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    padding: 0;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.humburger-line{
+    display: block;
+    width: 52px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
 }
 
 a{
@@ -36,14 +58,19 @@ a{
 
 .wrapper{
     max-width: 1440px;
+    min-width: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: grey;
 }
 
 .avatar{
-    width: 400px;
+    width: 420px;
     height: 500px;
+}
+
+.avatar-wraper{
+    padding-left: 5px;
 }
 
 .contact-wrapper{
@@ -58,17 +85,17 @@ a{
 
 .name{
     font-size: 48px;
+    padding-bottom: 10px;
 }
 
 .job-name{
     font-size: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     text-shadow: 1px 1px 1px rgb(242, 247, 247);
 }
 
 .contacts{
     padding-left: 120px;
-    min-width: 420px;
     padding-top: 20px;
 }
 
@@ -92,7 +119,7 @@ a{
 }
 
 .section-discription > img{
-    width: 900px;
+    width: 500px;
     height: 300px;
 }
 
@@ -106,6 +133,7 @@ a{
     margin-top: 50px;
     padding-left: 0px;
     padding-top: 10px;
+    border-radius: 5px;
 }
 
 .footer-list > li {
@@ -121,4 +149,123 @@ a{
 
 .rs-logo:hover{
     transform: translateX(2px) translateY(-2px);
+}
+
+@media (max-width: 1000px){
+    .navigation {
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    .nav-item:hover{
+        transform: translateX(2px) translateY(-2px);
+    }
+    
+    .button-humburger{
+        display: block;
+    }
+
+    .contact-wrapper{
+        margin-top: 58px;
+        flex-direction: column;
+    }
+
+    .avatar{
+        display: block;
+        margin: auto;
+        width: 570px;
+        height: 700px;
+    }
+
+    .avatar-wraper {
+        padding-left: 0px;
+    }
+
+    .contacts{
+        padding-left: 0px;
+        margin: auto;
+    }
+    
+    .name, .job-name{
+        padding-left: 45px;
+    }
+
+    .button-humburger:hover .humburger-line {
+        background-color: #BDAE82;
+    }
+    
+    .button-humburger.is-active .humburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .button-humburger.is-active .humburger-line:nth-child(1) {
+        -webkit-transform: translateY(13px) rotate(45deg);
+            -ms-transform: translateY(13px) rotate(45deg);
+             -o-transform: translateY(13px) rotate(45deg);
+                transform: translateY(13px) rotate(45deg);
+    }
+    
+    .button-humburger.is-active .humburger-line:nth-child(3) {
+        -webkit-transform: translateY(-13px) rotate(-45deg);
+            -ms-transform: translateY(-13px) rotate(-45deg);
+             -o-transform: translateY(-13px) rotate(-45deg);
+                transform: translateY(-13px) rotate(-45deg);
+    }
+
+    .nav-list {
+        position: fixed;
+        right: -432px;
+        top: 0px;
+        bottom: 0px;
+        z-index: 2;
+        max-width: 300px;
+        width: 100%;
+        padding-top: 90px;
+        padding-left: 127px;
+        padding-bottom: 90px;
+        background-color: black;
+        transition: 0.8s;
+        flex-direction: column;
+    }
+
+    .nav-item > a{
+        color: white;
+        font-size: 32px;
+    }
+
+    .nav-item:hover > a{
+        color: #BDAE82;
+    }
+
+    .overflow{
+        overflow: hidden;
+    }
+
+    .overlist {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 0.8s;
+    }
+
+    .open {
+        display: flex;
+        right: 0px;
+    }
+}
+
+@media (max-width: 600px){
+    .avatar{
+        width: 400px;
+        height: 480px;
+    }
+
+    .section-discription > img{
+        width: 400px;
+        height: 300px;
+    }
 }
