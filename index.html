@@ -34,10 +34,10 @@
                     <h2 class="name">Vlad Tarnovskiy</h2>
                     <h3 class="job-name">Front-End Developer</h3>
                     <ul>
-                        <li class="contact-item">Location: Minsk, Belarus</li>
-                        <li class="contact-item">Phone : +375292949714</li>
-                        <li class="contact-item">Email: vladtarnovski989@gmail.com</li>
-                        <li class="contact-item"><a href="https://github.com/VladTarnovskiy">Github: VladTarnovskiy </a></li>
+                        <li class="contact-item"><img src="./assets/house.svg" alt="Home"> Location: Minsk, Belarus</li>
+                        <li class="contact-item"><img src="./assets/phone.svg" alt="Phone"> Phone: +375292949714</li>
+                        <li class="contact-item"><img src="./assets/email.svg" alt="E-mail"> Email: vladtarnovski989@gmail.com</li>
+                        <li class="contact-item"><img src="./assets/github.svg" alt="GitHub"> GitHub: VladTarnovskiy </a></li>
                     </ul>
                 </div>
             </div>
@@ -64,8 +64,20 @@
             </section>
             <section id="code-example" class="section">
                 <h2 class="section-name">Code example</h2>
-                <div class="section-discription">
-                    <img src="/assets/code.png" alt="Code">
+                <div class="section-discription" >
+                    <code>
+                        <pre>function closemenu (event) {</pre>
+                        <pre>   if (event.target.classList.contains('header_link') || nav.classList.contains('overlist')){</pre>
+                        <pre>   button.classList.remove('is-active')</pre>
+                        <pre>   nav.classList.remove('overlist')</pre>
+                        <pre>   navlist.classList.remove('open')</pre>
+                        <pre>   body.classList.remove('overflow')</pre>
+                        <pre>   titleSection.classList.remove('overflow')</pre>
+                        <pre>   }</pre>
+                        <pre>}</pre>
+                        <pre></pre>
+                        <pre>nav.addEventListener('click', closemenu)</pre>
+                    </code>
                 </div>
             </section>
             <section id="my-projects" class="section">
@@ -91,9 +103,9 @@
         <footer>
             <div>
                 <ul class="footer-list">
-                    <li><a href="https://github.com/VladTarnovskiy">GitHub</a></li>
-                    <li>&#169 2022</li>
-                    <li><a href="https://rs.school/js-stage0/"><img src="/assets/logo-rsschool3.png" class="rs-logo" alt="Rs-school-logo"></a></li>
+                    <li><a href="https://github.com/VladTarnovskiy"><img src="./assets/github.svg" class="git-logo" alt="GitHub"></a></li>
+                    <li>&copy; 2022</li>
+                    <li><a href="https://rs.school/js-stage0/"><img src="./assets/logo-rsschool3.png" class="rs-logo" alt="Rs-school-logo"></a></li>
                 </ul>
             </div>
         </footer>
